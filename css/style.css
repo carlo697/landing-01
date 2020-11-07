@@ -1,0 +1,416 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-family: 'Poppins', sans-serif;
+}
+
+.banner {
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	background: #3475ca;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.banner img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	opacity: 0.5;
+}
+
+.banner .contenido {
+	position: relative;
+	max-width: 750px;
+	text-align: center;
+}
+
+.banner .contenido h2 {
+	color: white;
+	font-size: 3.5em;
+}
+
+.banner .contenido p {
+	color: white;
+	font-size: 1.1em;
+}
+
+.banner {
+	padding: 50px;
+}
+
+.banner header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 40px 100px;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 1000;
+}
+
+.banner header .logo {
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 1.5em;
+	font-weight: 700;
+	letter-spacing: 2px;
+}
+
+.banner header .toggle {
+	width: 36px;
+	height: 28px;
+	background: url("../img/toggle.png");
+	background-size: cover;
+	cursor: pointer;
+}
+
+
+.acerca {
+	position: relative;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.acerca .contenidoBx {
+	background: #162c3b;
+	padding: 100px;
+	width: 50%;
+}
+
+.cabecera {
+	color: white;
+	font-size: 1.8em;
+	letter-spacing: 1px;
+	margin-bottom: 10px;
+}
+
+.texto {
+	color: white;
+	font-size: 1em;
+	font-weight: 300;
+	letter-spacing: 1px;
+}
+
+.acerca .imgBx {
+	background: url("../img/nosotros.jpg");
+	width: 50%;
+	background-size: cover;
+	background-position: center;
+}
+
+
+
+.servicios {
+	background: #12222d;
+	padding: 100px;
+	text-align: center;
+}
+
+.servicios .contenedor {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	margin-top: 60px;
+}
+
+.servicios .contenedor .servicioBx {
+	display: flex;
+	background: white;
+	width: 250px;
+	height: 350px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.servicios .contenedor .servicioBx img {
+	max-width: 100px;
+}
+
+.servicios .contenedor .servicioBx h2 {
+	font-weight: 500;
+	font-size: 1.5em;
+}
+
+
+
+.tecnologia {
+	background: #3f8ffc;
+	width: 100%;
+	padding: 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 300px;
+	margin-top: -300px;
+}
+
+.tecnologia .contenidoBx {
+	max-width: 700px;
+}
+
+.tecnologia .imgBx {
+	max-width: 250px;
+}
+
+.tecnologia .imgBx img {
+	width: 200px;
+	margin-left: 20px;
+}
+
+
+
+.cliente {
+	background: #162c3b;
+	padding: 100px;
+	text-align: center;
+}
+
+.cliente .imgBx {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	margin-top: 40px;
+}
+
+.cliente .imgBx img {
+	max-width: 150px;
+	margin: 20px;
+	opacity: 0.25;
+	cursor: pointer;
+}
+
+
+.cliente .imgBx img:hover {
+	opacity: 1;
+}
+
+
+
+.testimonios {
+	position: relative;
+	padding: 100px;
+	background: #12222d;
+	text-align: center;
+}
+
+.testimonios .contenedor {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 40px;
+	flex-wrap: wrap;
+}
+
+.testimonios .contenedor .contenidoBx {
+	background: white;
+	padding: 60px 50px;
+	width: 400px;
+
+	display: flex;
+	text-align: left;
+}
+
+.testimonios .contenedor .contenidoBx p {
+	font-style: italic;
+}
+
+.testimonios .contenedor .contenidoBx h3 {
+	text-align: end;
+	font-weight: 500;
+	color: #3f8ffc;
+	margin-top: 30px;
+}
+
+
+
+.contacto {
+	padding: 100px;
+	background: #162c3b;
+	text-align: center;
+}
+
+
+.imgBx2 {
+	background: url("../img/contacto.jpg");
+	background-size: cover;
+	background-position: center;
+	width: 50%;
+}
+
+.redbg {
+	background: url("../img/red.jpg") !important;
+	background-size: cover;
+	background-position: center;
+}
+
+
+
+
+.form .inputBx {
+	margin-bottom: 40px;
+}
+
+.form .inputBx input, .form .inputBx textarea {
+	width: 100%;
+	background: transparent;
+	border: none;
+	outline: none;
+	padding: 10px 0px;
+	font-size: 1.2em;
+	font-weight: 300;
+	color: white;
+	border-bottom: 2px solid white;
+}
+
+.form .inputBx textarea {
+	min-height: 150px;
+}
+
+.form .inputBx input::placeholder, .form .inputBx textarea::placeholder {
+	color: white;
+}
+
+.form .inputBx input[type="submit"] {
+	width: 150px;
+	background: white;
+	color: #111;
+	cursor: pointer;
+	font-weight: 400;
+}
+
+
+
+.footer {
+	background: #162c3b;
+	padding: 20px 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.footer ul {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.footer ul li {
+	list-style: none;
+}
+
+.footer ul li a {
+	text-decoration: none;
+	display: inline-block;
+	margin: 0 10px;
+}
+
+.footer ul li a img {
+	filter: invert(1);
+	max-width: 20px;
+}
+
+
+@media (max-width: 991px) {
+	.banner header {
+		padding: 20px 50px;
+	}
+
+	.banner .contenido {
+		font-size: 0.9em;
+	}
+
+	.acerca {
+		flex-direction: column-reverse;
+	}
+
+	.acerca .contenidoBx,
+	.acerca .imgBx {
+		width: 100%;
+		padding: 50px;
+		min-height: 400px;
+		text-align: center;
+	}
+
+	.servicios {
+		padding: 50px;
+	}
+
+	.servicios .contenedor {
+		justify-content: center;
+		margin-top: 20px;
+	}
+
+	.servicios .contenedor .servicioBx {
+		margin: 20px;
+		width: 300px;
+		height: 350px;
+	}
+
+	.tecnologia {
+		padding: 50px;
+		padding-top: 300px;
+		justify-content: center;
+		flex-direction: column;
+	}
+
+	.tecnologia .imgBx {
+		margin-top: 40px;
+		max-width: 250px;
+	}
+
+	.cliente {
+		padding: 50px;
+	}
+
+	.cliente .imgBx {
+		justify-content: center;
+	}
+
+
+	.testimonios {
+		padding: 50px;
+	}
+
+	.testimonios .contenedor {
+		justify-content: center;
+	}
+
+	.testimonios .contenidoBx {
+		padding: 60px 40px;
+		max-width: 550px;
+		margin-bottom: 40px;
+	}
+
+	.testimonios .contenidoBx:last-child {
+		margin-bottom: 0px;
+	}
+
+	.footer {
+		padding: 20px 50px;
+		flex-direction: column-reverse;
+	}
+
+	.footer ul {
+		margin-bottom: 20px;
+	}
+}
